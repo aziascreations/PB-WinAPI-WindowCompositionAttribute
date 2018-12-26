@@ -3,7 +3,7 @@
 ; Loading the function from the library of not done automatically.
 If Not SetWindowCompositionAttribute_
 	If Not LoadSetWindowCAFunction()
-		DebuggerError("Failed to automatically load SetWindowCompositionAttribute(...) from user32.dll ! -> (SetWindowCompositionAttribute.pbi)")
+		DebuggerError("Failed to manually load SetWindowCompositionAttribute(...) from user32.dll !")
 	EndIf
 EndIf
 
@@ -44,6 +44,5 @@ If OpenWindow(0, 100, 200, 400, 320, "PureBasic Window", #PB_Window_MinimizeGadg
 EndIf
 
 ; IDE Options = PureBasic 5.62 (Windows - x64)
-; CursorPosition = 28
-; FirstLine = 9
+; CursorPosition = 5
 ; EnableXP

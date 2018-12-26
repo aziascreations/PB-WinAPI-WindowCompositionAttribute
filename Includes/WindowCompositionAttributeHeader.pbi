@@ -11,7 +11,7 @@ Enumeration AccentState
 	#ACCENT_INVALID_STATE = 5
 EndEnumeration
 
-Structure ACCENTPOLICY
+Structure ACCENTPOLICY ; Used when #WCA_ACCENT_POLICY in used for nAttribute.i in a WINCOMPATTRDATA structure
 	nAccentState.i
 	nColor.i ; Was supposed to be lower in the structure according to the source material, but tests worked with this setup.
 	nFlags.i
@@ -20,10 +20,10 @@ EndStructure
 
 Structure WINCOMPATTRDATA
 	nAttribute.i
-	*pData.ACCENTPOLICY
+	*pData
 	ulDataSize.i
 EndStructure
 
 ; IDE Options = PureBasic 5.62 (Windows - x64)
-; CursorPosition = 3
+; CursorPosition = 13
 ; EnableXP
